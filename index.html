@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title></title>
+    <meta name="description" content="">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="includes/css/styles.css" rel="stylesheet">
+
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+<div class="container" id="main">
+
+
+    <div class="navbar navbar-fixed-top">
+
+        <div class="container">
+            <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse"
+                    type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="/"><img src="images/logo.png" alt="Your logo"> </a>
+
+
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Services <strong class="caret"></strong>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Web design</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Web development</a>
+                            </li>
+
+                            <li>
+                                <a href="#">SEO</a>
+                            </li>
+
+                            <li class="divider"></li>
+                            <li class="dropdown-header">More services</li>
+
+                            <li>
+                                <a href="#">Content</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Social networking</a>
+                            </li>
+                        </ul><!--end dropdown-menu-->
+                    </li>
+                </ul><!--end nav-->
+
+                <form class="navbar-form pull-left">
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search...">
+                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form><!--end navbar-form-->
+
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-user"> My account <strong class="caret"> </strong></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+                            </li>
+
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
+                            </li>
+
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
+                            </li>
+
+                            <li class="divider"></li>
+
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+                            </li>
+                        </ul> <!--end dropdown-menu-->
+
+                    </li>
+                </ul><!--end nav pill-ridht-->
+            </div><!--end nav-collapse-->
+
+        </div><!--end container-->
+
+    </div>        <!--end navbar-->
+
+
+    <div class="carousel slide" id="myCarousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+            <li data-slide-to="1" data-target="#myCarousel"></li>
+            <li data-slide-to="2" data-target="#myCarousel"></li>
+
+        </ol>
+
+        <!--wrapper fo slider-->
+        <div class="carousel-inner">
+
+            <div class="item active" id="slide1">
+                <!--<img src="images/carousel_large_01.jpg">-->
+                <div class="carousel-caption">
+                    <h4>Bootstrap 3</h4>
+                    <p>Learn how to build your website</p>
+                </div><!--end carousel-caption-->
+
+            </div><!--end item-->
+
+            <div class="item" id="slide2">
+
+                <div class="carousel-caption">
+                    <h4>Learn to code a website in 4-hours!</h4>
+                    <p>PSD to HTML5</p>
+                </div><!--end carousel-caption-->
+
+            </div><!--end item-->
+
+            <div class="item" id="slide3">
+
+                <div class="carousel-caption">
+                    <h4>Hosting 101</h4>
+                    <p>Learn how to buy a perfect domain name and hosting package</p>
+                </div><!--end carousel-caption-->
+
+            </div><!--end item-->
+
+        </div><!--end carousel-inner-->
+
+        <!--Controls-->
+        <a class="left carousel-control" data-slide="prev" href="#myCarousel">
+            <span class="icon-prev"></span>
+        </a>
+
+        <a class="right carousel-control" data-slide="next" href="#myCarousel">
+            <span class="icon-next"></span>
+        </a>
+
+    </div><!--end myCarousel-->
+
+
+    <div class="row" id="bigCallout">
+
+        <div class="col-12">
+
+            <div class="alert alert-success alert-block fade in" id="successAlert">
+                <button type="button" class="close" id="alertClose">&times;</button>
+                <h4>Success</h4>
+                <p>You just made this element display by using jQuery</p>
+            </div><!--end alert-->
+
+            <div class="well well-small visible-sm">
+                <a href="" class="btn btn-large btn-block btn-default">
+                    <span class="glyphicon glyphicon-phone"></span> Give us a call
+                </a>
+            </div><!--end well-small-->
+
+            <div class="well">
+                <div class="page-header">
+                    <h1>A Fancy Header
+                        <small>A subheader for extra awesome</small>
+                    </h1>
+                </div><!--end page-header-->
+                <p class="lead">Some solid leading copy whil hellp get your users engaged/</p>
+
+                <a href="#" class="btn btn-large btn-primary" id="alertMe">Click</a>
+                <a href="#" class="btn btn-large btn-link">secondary link</a>
+            </div><!--end whel-->
+        </div><!--end col12-->
+
+    </div><!--end bigCallout-->
+
+
+    <div class="row" id="featuresHeading">
+        <div class="col-12">
+            <h2>More Features</h2>
+            <p class="lead">
+                Attitude at the cosmos was the nuclear flux of love, experienced to a reliable sonic shower.
+                Make it so.Nanomachines die with ellipse at the proud planet!When the captain reproduces for starfleet
+                headquarters, all ships teleport modern, extraterrestrial aliens.
+                Shields up, vital adventure!Intelligent, virtual aliens oddly handle a bare, cold teleporter.
+            </p>
+
+        </div><!--end col12-->
+    </div><!--end featuresHeading-->
+
+
+    <div class="row" id="features">
+
+        <div class="col-sm-4 feature">
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Markup with HTML5</h3>
+                </div><!--end panel-heading-->
+                <img src="images/badge_html5.jpg" alt="HTML5" class="img-circle">
+                <p>
+                    I start to work with
+                    that the project will be completed on time and with great attention
+                </p>
+                <a href="" target="_blank" class="btn btn-warning btn-block">Learn to code HTML5</a>
+            </div><!--end panel-->
+        </div><!--end col-sm-4-->
+
+        <div class="col-sm-4 feature">
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Markup with Bootstrap</h3>
+                </div><!--end panel-heading-->
+                <img src="images/badge_bootstrap.jpg" alt="Bootstrap" class="img-circle">
+                <p>
+                    I start to work with
+                    that the project will be completed on time and with great attention
+                </p>
+                <a href="" target="_blank" class="btn btn-info btn-block">Learn to Bootstarp 3</a>
+            </div><!--end panel-->
+        </div><!--end col-sm-4-->
+
+        <div class="col-sm-4 feature">
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Style with CSS</h3>
+                </div><!--end panel-heading-->
+                <img src="images/badge_css3.jpg" alt="HTML5" class="img-circle">
+                <p>
+                    I start to work with
+                    that the project will be completed on time and with great attention
+                </p>
+                <a href="" target="_blank" class="btn btn-danger btn-block">Learn to style CSS</a>
+            </div><!--end panel-->
+        </div><!--end col-sm-4-->
+    </div> <!--end features-->
+
+
+    <div class="row" id="moreInfo">
+
+        <div class="col-sm-6">
+            <h3>New tabbable content</h3>
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab1" data-toggle="tab"> Section 1</a></li>
+                    <li><a href="#tab2" data-toggle="tab"> Section 2</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <h4><span class="glyphicon glyphicon-map-marker"></span> Our location
+                            <small>More like our favourite surf spot</small>
+                        </h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111440.57765910984!2d105.07441661025798!3d51.888117502639965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5da88ff8ecd5096f%3A0xc4625f89b090beb6!2z0JHQvtC70YzRiNCw0Y8g0JrQvtGC0YssINCY0YDQutGD0YLRgdC60LDRjyDQvtCx0LsuLCA2NjQ1MjA!5e0!3m2!1sru!2sru!4v1505812678607"
+                                width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                        <p>
+                            Attitude at the cosmos was the nuclear flux of love, experienced to a reliable sonic shower.
+                            Make it so.Nanomachines die with ellipse at the proud planet!When the captain reproduces for
+                            starfleet headquarters, all ships teleport modern, extraterrestrial aliens.
+                            Shields up, vital adventure!Intelligent, virtual aliens oddly handle a bare, cold
+                            teleporter.
+                            Attitude at the cosmos was the nuclear flux of love, experienced to a reliable sonic shower.
+                            Make it so.Nanomachines die with ellipse at the proud planet!When the captain reproduces for
+                            starfleet headquarters, all ships teleport modern, extraterrestrial aliens.
+                            Shields up, vital adventure!Intelligent, virtual aliens oddly handle a bare, cold
+                            teleporter.
+                        </p>
+
+                        <p>
+                            Attitude at the cosmos was the nuclear flux of love, experienced to a reliable sonic shower.
+                            Make it so.Nanomachines die with ellipse at the proud planet!When the captain reproduces for
+                            starfleet headquarters, all ships teleport modern, extraterrestrial aliens.
+                            Shields up, vital adventure!Intelligent, virtual aliens oddly handle a bare, cold
+                            teleporter. Attitude at the cosmos was the nuclear flux of love, experienced to a reliable
+                            sonic shower.
+                            Make it so.Nanomachines die with ellipse at the proud planet!When the captain reproduces for
+                            starfleet headquarters, all ships teleport modern, extraterrestrial aliens.
+                            Shields up, vital adventure!Intelligent, virtual aliens oddly handle a bare, cold
+                            teleporter.
+                        </p>
+                    </div><!--end tab-pane-->
+
+                    <div class="tab-pane" id="tab2">
+                        <h4>A left Floated Picture</h4>
+                        <small>Placehod.it</small>
+                        <img src="http://placehold.it/140" class="thumbnail pull-left">
+                        <p>
+                             Attitude at the cosmos was the nuclear flux of love, experienced to a reliable sonic shower.
+                Make it so.Nanomachines die with ellipse at the proud planet!When the captain reproduces for starfleet headquarters, all ships teleport modern, extraterrestrial aliens.
+                Shields up, vital adventure!Intelligent, virtual aliens oddly handle a bare, cold teleporter.
+                             Attitude at the cosmos was the nuclear flux of love, experienced to a reliable sonic shower.
+                Make it so.Nanomachines die with ellipse at the proud planet!When the captain reproduces for starfleet headquarters, all ships teleport modern, extraterrestrial aliens.
+                Shields up, vital adventure!Intelligent, virtual aliens oddly handle a bare, cold teleporter.
+                        </p>
+
+                        <p>
+                             Attitude at the cosmos was the nuclear flux of love, experienced to a reliable sonic shower.
+                Make it so.Nanomachines die with ellipse at the proud planet!When the captain reproduces for starfleet headquarters, all ships teleport modern, extraterrestrial aliens.
+                Shields up, vital adventure!Intelligent, virtual aliens oddly handle a bare, cold teleporter.
+                             Attitude at the cosmos was the nuclear flux of love, experienced to a reliable sonic shower.
+                Make it so.Nanomachines die with ellipse at the proud planet!When the captain reproduces for starfleet headquarters, all ships teleport modern, extraterrestrial aliens.
+                Shields up, vital adventure!Intelligent, virtual aliens oddly handle a bare, cold teleporter.
+                        </p>
+
+                        <hr>
+
+                        <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal">
+                            <span class="glyphicon glyphicon-hand-up"></span>Click for a modal Window!
+                        </a>
+
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button class="close" data-dismiss="modal">&times;</button>
+                                        <h4>A modal Window</h4>
+                                    </div><!--end modal-header-->
+
+                                    <div class="modal-body">
+                                        <h4>Text in a modal</h4>
+                                        <p>
+                                            When the c-beam dies for starfleet headquarters, all spacecrafts dissolve
+                                            virtual, quirky lieutenant commanders.
+                                        </p>
+
+                                        <h4>Popovers in a modal</h4>
+
+                                        <a href="#" class="btn btn-danger pop" data-toggle="popover"
+                                           data-placement="top" data-original-title="Clicked"
+                                           data-content="The extraterrestrial c-beam surprisingly acquires the hur'q.">Don't
+                                            click this button</a>
+
+
+                                        <h4>Tooltips in a modal</h4>
+                                        <a href="#" data-original-title="Tooltip message" rel="tooltip">This link</a>
+                                        should have a tooltip, and so should
+                                        <a href="" data-original-title="Whohooo" rel="tooltip" data-content="tooltip">this
+                                            one</a>!
+
+                                        <hr>
+
+                                        <p>
+                                            <small class="text-muted">This form doesn't do anything. Just a heads up.
+                                            </small>
+                                        </p>
+
+                                        <form class="form-horizontal" id="contactForm">
+
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label" for="inputName">Name</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputName" placeholder="Name"
+                                                           type="text">
+                                                </div>
+
+                                                <label class="col-lg-2 control-label" for="inputName">Email</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputEmail" placeholder="Email"
+                                                           type="email">
+                                                </div>
+
+                                                <label class="col-lg-2 control-label" for="inputMessage">Message</label>
+                                                <div class="col-lg-10">
+                                                    <textarea class="form-control" id="inputMessage"
+                                                              placeholder="Message" rows="3"></textarea>
+                                                    <button class="btn btn-success pull-right" type="submit">Send!
+                                                    </button>
+                                                </div>
+                                            </div> <!-- end form-group -->
+
+                                        </form>
+
+
+                                    </div><!--end modal-body-->
+                                    <div class="modal-footer">
+                                        <button class="btn btn-default" data-dismiss="modal" type="button">Close
+                                        </button>
+                                        <button class="btn btn-primary" type="button">Save changes</button>
+                                    </div> <!-- end modal-footer -->
+                                </div><!--end modal-content-->
+                            </div><!--end modal-dialog-->
+                        </div><!--end modal-->
+
+                    </div><!--end tab-pane-->
+
+                </div><!--end tab-content-->
+            </div><!--end tabbable-->
+        </div><!--end col-sm-6-->
+
+        <div class="col-sm-6">
+            <h3>Some Text info</h3>
+            <p>Captains are the tribbles of the ugly stigma.This procedure has only been disrupted by a ugly
+                cosmonaut.The c-beam is nosily greatly exaggerated.History at the port that is when carnivorous
+                transformators reproduce.Rumour, hypnosis, and history.Why does the star reproduce?The proud hur'q
+                accelerative unites the phenomenan.</p>
+
+
+            <h4>A list group</h4>
+
+            <div class="list-group">
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Kale</h4>
+                    <p class="list-group-item-text">Galactic, fantastic nanomachines unearthly deceive a gravimetric,
+                        ordinary spacecraft.Sensor, core, and turbulence.</p>
+                </a>
+
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Carrots</h4>
+                    <p class="list-group-item-text">Bilge rats whine with courage!Ales are the breezes of the undead
+                        fortune.Cannibals die from pestilences like dark landlubbers.</p>
+                </a>
+
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Steel-cut oats</h4>
+                    <p class="list-group-item-text">One must meet the aspect in order to invent the believer of
+                        mysterious sorrow.The blessing of developing saints is united.</p>
+                </a>
+
+                <h5>A small heading</h5>
+                <p>Nunquam promissio capio.Fraticinida de rusticus historia, fallere competition!Dominas persuadere in
+                    hamburgum!A falsis, particula grandis navis.Caculas favere in rugensis civitas!Ollas favere in
+                    oenipons!Cum racana congregabo, omnes lamiaes talem camerarius, castus eraes.Cur historia
+                    tolerare?</p>
+            </div> <!-- end list-group -->
+
+        </div> <!-- end col-sm-6 -->
+
+    </div><!--end moreInfo-->
+
+
+    <hr>
+
+    <div class="row" id="moreCourses">
+        <div class="col-12">
+            <h3>Learn more about Web Design</h3>
+            <div class="thumbnails row">
+                <div class="col-6">
+                    <div class="thumbnail">
+                        <img src="images/item_webhosting101.jpg" alt="WebHosting">
+                        <div class="label label-success price">
+                            <span class="glyphicon glyphicon-tag"></span> <sup>$</sup>49
+                        </div> <!-- end label -->
+                        <div class="caption">
+                            <h3>Web Hosting 101</h3>
+                            <p>Cur vox ire?Clemens detrius sapienter resuscitabos equiso est.Burgus primus spatii
+
+                                est.Technically assimilate an astronaut.</p>
+                            <p><a href="#" class="btn btn-primary btn-small"> Take course</a>
+                                <a href="#" class="btn btn-small btn-link">Learn more</a>
+                            </p>
+                        </div> <!-- end caption -->
+                    </div> <!-- end thumbnail -->
+                </div> <!-- end col-6 -->
+
+                <div class="col-6">
+                    <div class="thumbnail">
+                        <img src="images/item_psd2html5.jpg" alt="WebHosting">
+                        <div class="label label-info price">
+                            <span class="glyphicon glyphicon-tag"></span> Free
+                        </div> <!-- end label -->
+                        <div class="caption">
+                            <h3>PSD to HTML &amp CSS3</h3>
+                            <p>Cur vox ire?Clemens detrius sapienter resuscitabos equiso est.Burgus primus spatii
+
+                                est.Technically assimilate an astronaut.</p>
+                            <p><a href="#" class="btn btn-primary btn-small"> Take course</a>
+                                <a href="#" class="btn btn-small btn-link">Learn more</a>
+                            </p>
+                        </div> <!-- end caption -->
+                    </div> <!-- end thumbnail -->
+                </div> <!-- end col-6 -->
+            </div> <!-- end thumbnails -->
+        </div> <!-- end col-12 -->
+    </div><!--end moreCourses-->
+
+</div>    <!--end container-->
+
+<footer>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <h6>Copyright &copy; 2017 Alex</h6>
+            </div> <!-- end col-sm-2 -->
+
+            <div class="col-sm-4">
+                <h6>About US</h6>
+                <p>Accola ires, tanquam neuter exsul.Who can invent the energy and mind of a visitor if he has the
+                    mysterious control of the individual?This understanding has only been transfered by a
+                    post-apocalyptic space suit.</p>
+            </div> <!-- end col-sm-4 -->
+
+            <div class="col-sm-2">
+                <h6>Navigation</h6>
+                <ul class="list-unstyled">
+                    <li><a href="images"> Product</a></li>
+                    <li><a href="images"> Services</a></li>
+                    <li><a href="images"> Link</a></li>
+                    <li><a href="images"> Contact</a></li>
+                </ul>
+            </div> <!-- end col-sm-2 -->
+
+            <div class="col-sm-2">
+                <h6>Follow Us</h6>
+                <ul class="list-unstyled">
+                    <li><a href="images"> Twitter</a></li>
+                    <li><a href="images"> Facebook</a></li>
+                    <li><a href="images"> VK</a></li>
+                </ul>
+            </div> <!-- end col-sm-2 -->
+
+            <div class="col-sm-2">
+                <h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Alex</h6>
+
+
+            </div> <!-- end col-sm-2 -->
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</footer>
+
+<!-- All Javascript at the bottom of the page for faster page loading -->
+
+<!-- First try for the online version of jQuery-->
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<!-- If no online access, fallback to our hardcoded version of jQuery -->
+<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+<!-- Bootstrap JS -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Custom JS -->
+<script src="includes/js/script.js"></script>
+
+</body>
+</html>
+
